@@ -109,7 +109,8 @@ public class SimpleGraphDocument {
     }
 
     private String svgRows() {
-        Double defaultXOffset = 100D;
+        //FIXME improve
+        Double defaultXOffset = 140D;
         Double defaultYOffset = 90D;
 
         String output = "";

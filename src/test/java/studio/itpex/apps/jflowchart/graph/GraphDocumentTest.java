@@ -64,4 +64,42 @@ public class GraphDocumentTest {
         System.out.print(document.asSvg());
     }
 
+    @Test
+    public void exerciseVowels() {
+        SimpleGraphDocument document = new SimpleGraphDocument(800, 600);
+
+        document.addNode(new StartNode(12D, 15D));
+        document.addRow();
+        document.addNode(new ScreenOutputNode("'Insert a character'"));
+        document.addRow();
+        document.addNode(new InputNode("character"));
+        document.addRow();
+        document.addNode(new ProcessNode("nChar := toLowerCase(character)"));
+        document.addRow();
+        document.addNode(new SimpleDesicionNode("nChar = 'a'"));
+        document.addNode(new SimpleDesicionNode("nChar = 'e'"));
+        document.addNode(new SimpleDesicionNode("nChar = 'i'"));
+        document.addNode(new SimpleDesicionNode("nChar = 'o'"));
+        document.addNode(new SimpleDesicionNode("nChar = 'u'"));
+        document.addNode(new ScreenOutputNode("character + ' is a vowel'"));
+        document.addRow();
+        document.addNode(new ScreenOutputNode("character + ' is NOT a vowel'"));
+        document.addNode(new EndNode());
+
+        System.out.print(document.asSvg());
+    }
+    
+    @Test
+    public void exerciseVowels2() {
+        SimpleGraphDocument document = new SimpleGraphDocument(800, 600);
+
+        //document.addNode(new StartNode(12D, 15D));
+        document.addRow();
+        //document.addNode(new ScreenOutputNode("'Insert a character'"));
+        document.addRow();
+        document.addNode(new InputNode("character"));
+
+        System.out.print(document.asSvg());
+    }
+
 }
