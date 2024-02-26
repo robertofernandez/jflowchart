@@ -11,7 +11,7 @@ public class SimpleDesicionNode extends ChartGraphNode {
     private String condition;
 
     public SimpleDesicionNode(String condition) {
-        this(12D, 30D, 20D, condition);
+        this(10D, 30D, 20D, condition);
     }
     
     public SimpleDesicionNode(Double fontSize, Double width, Double height, String condition) {

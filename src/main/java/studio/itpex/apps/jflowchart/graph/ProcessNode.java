@@ -11,7 +11,7 @@ public class ProcessNode extends ChartGraphNode {
     private Double height;
 
     public ProcessNode(String text) {
-        this(12D, 60D, 40D, text);
+        this(10D, 60D, 40D, text);
     }
     
     public ProcessNode(Double fontSize, Double width, Double height, String text) {

@@ -34,9 +34,11 @@ public class ScreenOutputNode extends ChartGraphNode {
     @Override
     public String asSvg() {
         return "  <g\r\n"
-                + "     id=\"g14\">\r\n"
+                //+ "     id=\"g14\">\r\n"
+               // + " transform=\"matrix(1.3181608,0,0,1,-38.815613,0)\"  >\r\n"
+                + "\r\n>"
                 + "    <path\r\n"
-                + "       id=\"path2780\"\r\n"
+//                + "       id=\"path2780\"\r\n"
                 + "       d=\"M " + textCoordinatesFromOffset(0D, height) + "\r\n"
                 + "       C " + textCoordinatesFromOffset(-4D, height) + "\r\n"
                 + "         " + textCoordinatesFromOffset(-18D, height-6D) + "\r\n"

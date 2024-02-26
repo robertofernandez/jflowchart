@@ -11,7 +11,7 @@ public class InputNode extends ChartGraphNode {
     private Double height;
 
     public InputNode(String text) {
-        this(12D, 60D, 30D, text);
+        this(10D, 60D, 30D, text);
     }
     
     public InputNode(Double fontSize, Double width, Double height, String text) {
@@ -29,11 +29,11 @@ public class InputNode extends ChartGraphNode {
 
     @Override
     public String asSvg() {
-        return "  <path\r\n"
+        return "<g>  <path\r\n"
                 + "     d=\"m " + getOffset().getX() + " " + (getOffset().getY() + height) + " l " + width/6 + " " + (-1D * height) + " h " + (5 * width / 6) + " l " + (width/-6D)  + " " + height + "z\"\r\n"
                 + "     fill=\"#ccddff\"\r\n"
                 + "     stroke=\"#000000\"\r\n"
-                + "     id=\"path1159\" />"
+                + "     id=\"path1159\" /> </g>"
                 + "    <text\r\n"
                 + "       xml:space=\"preserve\"\r\n"
                 + "       style=\"font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332\"\r\n"
